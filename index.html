@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calcStyle.css">
+
+</head>
+<body>
+    <h1 class="mt-5" style="text-align: center;color: white;">Calculator</h1>
+    <div class="calc-body mt-5">
+        <!-- Calculator Display Screen -->
+        <div class="calc-screen">
+            <div id="calc-typed">
+                <input id="calcScreen" placeholder="0" type="text" class="form-control" readonly>
+            </div>
+        </div>
+
+        <!-- Calculator Buttons -->
+        <div class="calc-button-row">
+
+            <button onclick="displayContent('7')" id="seven">7</button>
+            <button onclick="displayContent('8')" id="eight">8</button>
+            <button onclick="displayContent('9')" id="nine">9</button>
+            <button onclick="displayContent('*')" id="mul" class="opt">&#215;</button>
+            <button onclick="displayContent('4')" id="four">4</button>
+            <button onclick="displayContent('5')" id="five">5</button>
+            <button onclick="displayContent('6')" id="six">6</button>
+            <button onclick="displayContent('-')" id="sub" class="opt">&#8722;</button>
+            <button onclick="displayContent('1')" id="one">1</button>
+            <button onclick="displayContent('2')" id="two">2</button>
+            <button onclick="displayContent('3')" id="three">3</button>
+            <button onclick="displayContent('+')" id="add" class="opt">&#43;</button>
+            <button id="ac" class="ac" onclick="clearAllContent()">AC</button>
+            <button onclick="displayContent('0')" id="zero" class="opt">0</button>
+            <button onclick="displayContent('/')" id="div" class="opt">&#247;</button>
+            <button id="equal" class="opt" onclick="showResult()">&#61;</button>
+
+             <button id="del" onclick="removeLast()">&#9003;</button>
+        </div>
+    </div>
+</body>
+<!-- external js -->
+<script src="./main.js"></script>
+
+</html>
